@@ -6,8 +6,18 @@ dotenv.config({
     path: `./env`,
 })
 
-
-connectDB();
+//kyoki connectDB async ha to ye promise return karega to humne then and catch use kara ha 
+connectDB()
+.then(() => {
+    //agar koi error nahi ha to app listen karegi 
+    app.listen(process.env.PORT||8000, () => {
+        console.log(`Server is running at Port : ${process.env.PORT}`)
+    });
+})
+.catch((err) => {
+    //error ha to error show karo
+    console.log("MONGO db connection failed !!!");
+})
 
 
 

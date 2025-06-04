@@ -4,10 +4,9 @@ import { DB_NAME } from "../constants.js";
 //highly possible that mogoose data give error so we use try and catch
 const connectDB  = async () => {
     try{
-
         //used to connect mongoose
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`);
-        //this is used to check is our connection is connected with connect server
+        //this is used to check is our connection is connected with server?
         console.log(`\n MongoDB connected !! db host: ${connectionInstance.connection.host} `);
 
     } catch(error){
