@@ -1,3 +1,17 @@
 --------------------MIDDLEWARE-------------------------------  
 jab user url hit karta ha to server ke pass request jane se phale kuch checking hogi jase user login ha ya nahi ye kaam middleware hi karte ha 
 
+
+------------------Mongoose Aggregate Paginate-----------------
+mongooseAggregatePaginate ka kaam MongoDB ke aggregation queries ko paginate karna hai, taaki bade data sets ko chhoti aur manageable pages mein divide kiya ja sake.
+Main Features (Kya karta hai?)
+- Pagination (Page-wise data) – Ek baar mein saara data fetch karne ki jagah, ye limited records fetch karta hai.
+- Sorting aur Filtering – Aap conditions set kar sakte ho jisme filtering aur sorting ho.
+- Efficiency – Query ka execution faster hota hai, kyunki pagination se memory load kam hota hai.
+- Async Support – Promises aur async/await ke saath kaam karta hai.
+
+----------------Bcrypt----------------
+bcrypt is a password-hashing function designed to securely store passwords by making them resistant to brute-force attack
+
+----------------JWT-----------------
+JWT (JSON Web Token) is a compact, URL-safe way of securely transmitting information between parties as a JSON object. It's commonly used for authentication and authorization in web applications.
