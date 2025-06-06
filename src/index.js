@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
+import {app} from "./app.js"
 
 //dotenv provide environment variable access to all the program 
 dotenv.config({

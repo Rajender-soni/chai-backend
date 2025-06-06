@@ -23,4 +23,13 @@ app.use(express.static("public"));
 //- Secure authentication ya user sessions me helpful hota hai.
 app.use(cookieParser());
 
+
+//routes   routes ise tarike se use hote ha
+import userRouter from "./routes/user.routes.js"
+
+//routes declaration 
+//hum get istemal kar rahe the use ki jagaha kyoki router humara direct tha abh middleware aa gaya 
+app.use("/api/v1/users" , userRouter)
+//http://localhost:8000/api/v1/users/register
+
 export {app};
